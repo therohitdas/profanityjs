@@ -1,0 +1,22 @@
+{
+  "name": "profanityjs",
+  "version": "0.1.0",
+  "description": "Simple profanity filter and masker.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therohitdas/profanityjs.git"
+  },
+  "keywords": [
+    "profanity"
+  ],
+  "author": "therohitdas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/therohitdas/profanityjs/issues"
+  },
+  "homepage": "https://github.com/therohitdas/profanityjs#readme"
+}
