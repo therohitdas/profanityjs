@@ -1,5 +1,5 @@
 {
-  "name": "profanityjs",
+  "name": "@therohitdas/profanityjs",
   "version": "0.1.0",
   "description": "Simple profanity filter and masker.",
   "main": "index.js",
