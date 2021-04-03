@@ -1,6 +1,6 @@
 // Source - https://github.com/LDNOOBW/List-of-Dirty-Naughty-Obscene-and-Otherwise-Bad-Words
 // HASH - 5faf2ba42d7b1c0977169ec3611df25a3c08eb13
-// Removed few words
+// Removed a few words, added a few words
 
 // Words from all languages are in this dictionary.
 // TODO create language separated dictionaries and arrays
@@ -997,6 +997,7 @@ const bagOfWordsDict = {
   maal: 1,
   "madar chod": 1,
   madarchod: 1,
+  madharchod: 1,
   madhavchod: 1,
   "mooh mein le": 1,
   mutth: 1,
