@@ -12,6 +12,12 @@ String.prototype.replaceAt = function (index, replacement) {
 };
 
 const containsProfanity = (sentence, useHomoglyphSearch) => {
+    if (sentence == "" || typeof (sentence) !== "string") {
+        throw new Error("containsProfanity(): first argument must be a non-empty string");
+    }
+    else if (typeof (useHomoglyphSearch) !== "boolean") {
+        throw new Error("containsProfanity(): second argument must be a boolean value");
+    }
     //   var useHomoglyphSearch = options.useHomoglyphSearch; use this line when more than one option is available
     if (useHomoglyphSearch) {
         var homoglyphResult = homoglyphSearch.search(sentence, bagOfWordsArray);
@@ -22,6 +28,13 @@ const containsProfanity = (sentence, useHomoglyphSearch) => {
 };
 
 const maskProfanity = (sentence, mask) => {
+    if (sentence == "" || typeof (sentence) !== "string") {
+        throw new Error("maskProfanity(): first argument must be a non-empty string");
+    }
+    mask = (typeof (mask) == "undefined") ? "*" : mask;
+    if (mask.length != 1 && typeof (mask) != "undefined") {
+        throw new Error("maskProfanity(): second argument must be a single char. Default - *");
+    }
     var homoglyphResult = homoglyphSearch.search(sentence, bagOfWordsArray);
     for (let i = 0; i < homoglyphResult.length; i++) {
         const result = homoglyphResult[i];
