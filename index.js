@@ -21,7 +21,7 @@ const containsProfanity = (sentence, useHomoglyphSearch) => {
     //  TODO - add a non homoglyph version
 };
 
-const maskProfanity = (sentence) => {
+const maskProfanity = (sentence, mask) => {
     var homoglyphResult = homoglyphSearch.search(sentence, bagOfWordsArray);
     for (let i = 0; i < homoglyphResult.length; i++) {
         const result = homoglyphResult[i];
@@ -29,7 +29,7 @@ const maskProfanity = (sentence) => {
         var index = result.index;
         var star = "";
         for (let j = 0; j < match.length; j++) {
-            star += "*";
+            star += mask;
         }
         sentence = sentence.replaceAt(index, star);
     }
