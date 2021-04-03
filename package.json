@@ -11,9 +11,12 @@
     "url": "git+https://github.com/therohitdas/profanityjs.git"
   },
   "keywords": [
-    "profanity"
+    "profanity",
+    "profanityjs",
+    "bad words",
+    "profanity filter"
   ],
-  "author": "therohitdas",
+  "author": "Rohit Das",
   "license": "CC-BY-4.0 License",
   "bugs": {
     "url": "https://github.com/therohitdas/profanityjs/issues"
