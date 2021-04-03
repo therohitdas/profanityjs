@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/therohitdas/profanityjs/issues"
   },
-  "homepage": "https://github.com/therohitdas/profanityjs#readme"
+  "homepage": "https://github.com/therohitdas/profanityjs#readme",
+  "dependencies": {
+    "homoglyph-search": "^1.2.0"
+  }
 }
